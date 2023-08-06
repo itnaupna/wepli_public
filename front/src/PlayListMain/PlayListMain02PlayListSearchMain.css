@@ -1,0 +1,449 @@
+.playlistmain02 {
+    /* fonts */
+    /* --font-bm-hanna-air: "BM HANNA Air";
+    --font-bm-hanna_ttf: "BM HANNA_TTF";
+    --font-kbo-dia-gothic: "KBO Dia Gothic"; */
+
+    /* font sizes */
+    --font-size-smi: 0.81rem;
+    --font-size-mid: 1.06rem;
+    --font-size-mini: 0.94rem;
+
+    /* Colors */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-darkorchid-100: #a649da;
+    --color-darkorchid-200: rgba(166, 73, 218, 0.15);
+
+    /* Gaps */
+    --gap-3xs: 0.63rem;
+    --gap-8xs: 0.31rem;
+
+    /* Paddings */
+    --padding-3xs: 0.63rem;
+    --padding-8xs: 0.31rem;
+    --padding-4xs: 0.56rem;
+
+    /* border radiuses */
+    --br-xl: 20px;
+}
+.playlistsearchcategory,
+.playlistsearchtag {
+    position: relative;
+    align-items: center;
+    width: 7.19rem;
+    flex-shrink: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.playlistsearchitem{
+    background-image:linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url("../MainIMG/Aris.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.playlistsearchlogotitle-icon {
+    position: relative;
+    width: 31.25rem;
+    height: 11.56rem;
+    object-fit: cover;
+}
+.playlistbuttonicon {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+}
+.playlistbuttontext {
+    position: relative;
+    font-weight: 500;
+}
+.playlistbutton {
+    flex: 1;
+    border-radius: var(--br-xl);
+    background-color: var(--color-darkorchid-200);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-4xs) var(--padding-8xs);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-8xs);
+    min-width: 10rem;
+    max-width: 15rem;
+    min-height: 3.13rem;
+}
+.playlistbutton:hover{
+
+}
+.playlistbuttonlist,
+.playlistbuttonset1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--gap-3xs);
+}
+.playlistbuttonset1 {
+    flex: 1;
+    justify-content: center;
+    min-width: 20.63rem;
+}
+.playlistbuttonlist {
+    align-self: stretch;
+    flex-wrap: wrap;
+    padding: var(--padding-3xs) 0.94rem;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    min-width: 31.25rem;
+    max-width: 62.5rem;
+}
+.playlistmainsearchbody {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    border-radius: var(--br-xl);
+    background-color: var(--color-white);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 11.53rem;
+    height: 3.13rem;
+}
+.playlistmainsearchtoggle-icon {
+    position: absolute;
+    right: 8.49rem;
+    bottom: 1.14rem;
+    width: 1.05rem;
+    height: 0.84rem;
+}
+.playlistmainsearchtoggleUP-icon {
+    position: absolute;
+    right: 8.49rem;
+    top: 1.14rem;
+    width: 1.05rem;
+    height: 0.84rem;
+}
+.playlistmainsearchoption {
+    position: absolute;
+    right: 0;
+    bottom: 0.63rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11.53rem;
+    height: 1.88rem;
+    user-select: none;
+}
+.playlistmainsearchoption:hover{
+    cursor: pointer;
+}
+.searchtypebox {
+    position: relative;
+    width: 11.53rem;
+    height: 3.13rem;
+}
+.playlsitsearchbarbody {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--br-xl);
+    background-color: var(--color-white);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    height: 3rem;
+    width: 16.097rem;
+    padding-left: 50px;
+    border: none;
+    font-family: var(--font-bm-hanna-air);
+    font-size: 20px;
+    outline: none;
+
+}
+.playlsitsearchicons {
+    position: absolute;
+    right: 16.55rem;
+    bottom: 0.63rem;
+    border-radius: var(--br-xl);
+    width: 1.91rem;
+    height: 1.88rem;
+    overflow: hidden;
+}
+.playlsitsearchicons:hover{
+    cursor: pointer;
+}
+.playlistsearchbar {
+    flex: 1;
+    position: relative;
+    width: 19.1rem;
+    height: 3.13rem;
+}
+.playlistbuttonlist-parent,
+.searchtypebox-parent {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.searchtypebox-parent {
+    width: 32.5rem;
+    flex-direction: row;
+    padding: 0 var(--padding-3xs);
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
+    max-width: 32.5rem;
+    font-size: 1.88rem;
+    color: var(--color-black);
+    font-family: var(--font-bm-hanna-air);
+}
+.playlistbuttonlist-parent {
+    flex: 1;
+    flex-direction: column;
+    gap: 4.06rem;
+    min-width: 31.25rem;
+    max-width: 62.5rem;
+}
+.playlistsearcjheader {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0 0 4.38rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.playlistsearchthumbnail-icon {
+    flex: 1;
+    position: relative;
+    border-radius: var(--br-xl);
+    max-width: 14.06rem;
+    overflow: hidden;
+    height: 14.56rem;
+    object-fit: cover;
+    max-height: 14.06rem;
+}
+
+.playlistsearchtag {
+    max-height: 0.94rem;
+}
+.playlistsearchcommentcount,
+.playlistsearchtagswrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playlistsearchtagswrapper {
+    top: 12.81rem;
+    left: 0;
+    width: 15rem;
+    flex-direction: row;
+    gap: var(--gap-3xs);
+    font-size: var(--font-size-mini);
+    font-family: var(--font-bm-hanna_ttf);
+}
+.playlistsearchcommentcount {
+    top: 0;
+    left: 0.49rem;
+    text-transform: capitalize;
+    width: 3.04rem;
+    height: 1.88rem;
+}
+.playlistsearchcommenticonwrapp {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    width: 0.85rem;
+    height: 0.88rem;
+}
+.playlistsearchcommentwrapper,
+.playlistsearchsongwrapper {
+    position: absolute;
+    width: 3.52rem;
+    height: 1.88rem;
+    text-align: center;
+}
+.playlistsearchcommentwrapper {
+    top: 10.75rem;
+    left: 3.7rem;
+}
+.playlistsearchsongwrapper {
+    top: 10.69rem;
+    left: 0;
+}
+.playlistsearchmakeday,
+.playlistsearchowner,
+.playlistsearchtitle {
+    position: absolute;
+    left: 0;
+    text-transform: capitalize;
+    align-items: center;
+}
+.playlistsearchmakeday {
+    top: 6.44rem;
+    font-size: 0.69rem;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 14.94rem;
+    height: 1.25rem;
+}
+.playlistsearchowner,
+.playlistsearchtitle {
+    display: -webkit-inline-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 16;
+    -webkit-box-orient: vertical;
+    display: block;
+}
+.playlistsearchowner {
+    top: 5rem;
+    font-size: var(--font-size-mid);
+    width: 14.94rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.playlistsearchtitle {
+    top: 2.5rem;
+    font-size: 1.25rem;
+    font-family: var(--font-bm-hanna_ttf);
+    width: 15rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.playlistsearchlikeicon {
+    position: relative;
+    width: 0.94rem;
+    height: 0.94rem;
+}
+.playlistsearchlikecount {
+    position: relative;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.13rem;
+    height: 1.88rem;
+    flex-shrink: 0;
+}
+.playlistsearchlikewrapper {
+    position: absolute;
+    top: 0;
+    left: 10.75rem;
+    width: 4.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.19rem;
+    text-align: center;
+}
+.playlistsearchinfowrapper {
+    position: relative;
+    width: 15rem;
+    height: 13.75rem;
+}
+.playlistsearchitem {
+    flex: 1;
+    border-radius: var(--br-xl);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-8xs);
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.25rem;
+    min-width: 32.29rem;
+    max-width: 32.29rem;
+    margin-left: 3.2%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.playlistsearchitem:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+.playlistitemwrapperframe,
+.playlistsearchbody {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.playlistitemwrapperframe {
+    flex: 1;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    padding: 0 1.56rem 1.25rem 1.56rem;
+    /*justify-content: space-around;*/
+    height: 616px;
+}
+.playlistitemwrapperframe::-webkit-scrollbar{
+    display: none;
+}
+.playlistsearchbody {
+    height: 40.63rem;
+    padding: var(--padding-3xs) var(--padding-3xs) var(--padding-3xs) 5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    min-width: 32.5rem;
+    min-height: 40.63rem;
+    text-align: left;
+    font-size: var(--font-size-smi);
+    color: var(--color-black);
+    font-family: var(--font-bm-hanna-air);
+}
+.playlistmain02 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 32.5rem;
+    text-align: center;
+    font-size: var(--font-size-mid);
+    color: var(--color-darkorchid-100);
+    font-family: var(--font-kbo-dia-gothic);
+}
+
+.NoResearch{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+}
+.playlistmainsearchDropDownBody{
+    position: absolute;
+    top: -9px;
+    left: 0;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 184.47px;
+    border-radius:20px;
+    z-index: 888;
+
+}
+
+.playlistmainsearchDropDown{
+    margin: 0px;
+    height: 1rem;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    line-height: 3rem;
+    user-select: none;
+}
+.playlistmainsearchDropDown:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.playlistsearchlogotitle-icon:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,285 @@
+.addsongmodals {
+    /* fonts */
+    /* --font-kbo-dia-gothic: "KBO Dia Gothic";
+    --font-bm-hanna_ttf: "BM HANNA_TTF";
+    --font-bm-dohyeon: "BM DoHyeon"; */
+
+    /* font sizes */
+    --font-size-16xl: 2.19rem;
+
+    /* Colors */
+    --color-black: #000;
+
+    /* Gaps */
+    --gap-16xl: 2.19rem;
+
+    /* Paddings */
+    --padding-8xs: 0.31rem;
+}
+@media (max-width: 1911px) {
+    .addsongmodalsubjecttxt{
+        width: 900px !important;
+    }
+    .addsongmodaltitle{
+        width: 600px;
+    }
+    .addsongmodalbuttons{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1600px) {
+    .addsongmodalsubjecttxt{
+        width: 800px !important;
+    }
+    .addsongmodaltitle{
+        width: 600px;
+    }
+    .addsongmodalbuttons{
+     margin-bottom: 20px;
+    }
+}
+@media (max-width: 1250px) {
+    .addsongmodal {
+       left: 30% !important;
+    }
+    .addsongmodaltitle{
+        width: 500px;
+    }
+}
+@media (max-width: 930px) {
+    .addsongmodal {
+        left: 20% !important;
+    }
+}
+@media (max-width: 800px) {
+    .addsongmodal {
+        left: 10.5% !important;
+    }
+}
+
+.addsongmodalsubjecttxt {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 515px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px !important;
+    height: 3.13rem;
+    font-family: var(--font-bm-dohyeon);
+    font-size: 40px;
+    text-align: center;
+
+}
+.addsongmodalback-icon {
+    position: absolute;
+    top: 0.58rem;
+    left: 0.74rem;
+    width: 2.12rem;
+    height: 2rem;
+    overflow: hidden;
+}
+.addsongmodalback-icon:hover{
+    cursor: pointer;
+}
+.addsongmodalsubject {
+    align-self: stretch;
+    position: relative;
+    height: 3.13rem;
+    z-index: 0;
+}
+.addsongmodalcover-icon {
+    position: relative;
+    border-radius: 20px;
+    width: 18.75rem;
+    height: 18.75rem;
+    object-fit: cover;
+}
+.addsongmodaltitle {
+    align-self: stretch;
+    position: relative;
+    text-transform: capitalize;
+    font-family: var(--font-bm-hanna_ttf);
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.addsongmodalnick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: -webkit-inline-box;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 40;
+    -webkit-box-orient: vertical;
+    width: 38.75rem;
+    white-space:nowrap;
+}
+.addsongmodalinfo {
+    position: relative;
+    width: 38.75rem;
+    height: 3.13rem;
+    font-size: var(--font-size-16xl);
+}
+.addsongmodalsonglenghttxt {
+    position: absolute;
+    top: 0;
+    right: -10%;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 2.19rem;
+}
+.addsongmodalsonglenghticon {
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    width: 2.19rem;
+    height: 2.19rem;
+}
+.addsongmodalsonglenghtitmes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7.19rem;
+    height: 2.19rem;
+}
+.addsongmodaladdbuttonicon,
+.addsongmodalsonglenght {
+    position: relative;
+    width: 7.19rem;
+    height: 2.19rem;
+}
+.addsongmodaladdbuttonicon {
+    width: 2.19rem;
+    object-fit: cover;
+}
+.addsongmodaladdbuttontxt {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 4.19rem;
+    height: 1.81rem;
+    flex-shrink: 0;
+}
+.addsongmodaladdbutton {
+    border-radius: 10px;
+    background-color: #bcbcff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 21.38rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-8xs) 0.94rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 0.94rem;
+    text-align: left;
+    font-size: var(--font-size-16xl);
+}
+.addsongmodaladdbutton:hover{
+    cursor: pointer;
+    background-color: #8f8fff;
+}
+.addsongmodalbuttons,
+.addsongmodalinfos {
+    display: flex;
+    padding: 0 var(--padding-8xs);
+}
+.addsongmodalbuttons {
+    align-self: stretch;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.addsongmodalinfos {
+    width: 46.25rem;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--gap-16xl);
+}
+.addsongmodalitem {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 19.19rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.63rem;
+}
+.addsongmodalgroup {
+    position: absolute;
+    margin: 0 !important;
+    width: calc(100% - 40px);
+    top: 11.19rem;
+    right: 1.25rem;
+    left: 1.25rem;
+    height: 19.19rem;
+    z-index: 1;
+    text-align: left;
+    font-size: 4.38rem;
+    font-family: var(--font-kbo-dia-gothic);
+}
+.addsongmodal {
+    position: absolute;
+    width: calc(100% - 820px);
+    top: calc(50% - 239.5px);
+    right: 25.63rem;
+    left: 25.63rem;
+    border-radius: 30px;
+    background-color: #fff;
+    height: 36.25rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2.19rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-16xl);
+    z-index: 15001;
+    min-width: 630px;
+    max-width: 1100px;
+}
+.addsongmodal::-webkit-scrollbar{
+    display: none;
+}
+.addsongframe {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.63rem;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 0.4s ease-in-out;
+    z-index: 10000;
+    font-family: var(--font-bm-dohyeon);
+}
+.ssmresultitem> :nth-child(3)>svg:hover{
+    cursor: pointer;
+}

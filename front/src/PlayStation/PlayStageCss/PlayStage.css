@@ -1,0 +1,670 @@
+.stage,
+.stage * {
+    box-sizing: border-box;
+}
+
+.stage {
+    padding: 10px 80px 10px 80px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1380px;
+    height: 810px;
+    min-width: 1380px;
+    max-width: 1710px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    height: 790px;
+    min-width: 710px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-left-header {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-left-button-group-a {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 270px;
+    height: 90px;
+    min-width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stageactive {
+    background: #8f8fff !important;
+}
+
+.stagebutton:hover {
+    background: #bcbcff
+}
+
+.stagebutton:active {
+    background: #aaf
+}
+
+
+.stagebutton {
+    background: #fff;
+    cursor:pointer;
+    user-select: none;
+}
+.stage-button-setting:hover{
+    background: #aaf;
+}
+.stage-button-Exit:hover{
+    background: #aaf;
+}
+.stage-button-stage {
+    background: #fff;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 136px;
+    min-height: 70px;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.stage-button-stage-text {
+    color: #000000;
+    text-align: center;
+    font: 400 20px var(--font-bm-dohyeon), sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-button-queue {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 112px;
+    min-height: 70px;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.stage-button-queue-text {
+    color: #000000;
+    text-align: center;
+    font: 400 20px var(--font-bm-dohyeon), sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-left-button-group-b {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    width: 420px;
+    height: 90px;
+    min-width: 420px;
+    position: relative;
+    overflow: hidden;
+}
+.stage-left-button-group-c{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    width: 420px;
+    height: 90px;
+    min-width: 420px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-button-grab {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.stage-button-grab-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.stage-button-up {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.stage-button-up-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.stage-button-down {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.stage-button-down-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.stage-button-skip {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-height: 70px;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.stage-button-skip-text {
+    color: #000000;
+    text-align: center;
+    font: 400 25px var(--font-bm-dohyeon), sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stage-button-setting{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-height: 70px;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.stage-button-Exit{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-height: 70px;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.stage-left-body {
+    /* background: #bac1ff; */
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    padding:5px;
+}
+/* .youtubebox, */
+.queuebox{
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1;
+    width: 100%;
+    height:100%;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.stage-left-body iframe{
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
+.stage-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    height: 790px;
+    min-width: 480px;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-right-header {
+    padding: 15px 5px 15px 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-button-chat-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.rightbutton {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.rightbutton:hover{
+    background:#eee;
+}
+
+.rightbutton:active{
+    background:#ccc;
+}
+.rightactive{
+    background:#fff;
+}
+.stage-button-people-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.stage-button-people-count {
+    color: #000000;
+    text-align: center;
+    font: 400 20px var(--font-bm-dohyeon), sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* . {
+    color: #707070;
+    text-align: center;
+    font: 400 15px var(--font-bm-dohyeon), sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.stage-button-guest-count {
+    color: #707070;
+    text-align: center;
+    font: 400 15px var(--font-bm-dohyeon), sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stagechatwrapper {
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-chat-body {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+}
+.stage-chat-item:hover{
+    background: rgba(230,230,230,0.7);
+}
+.stage-chat-item {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-chat-item-user-img {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.stage-chat-item-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-chat-item-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.stage-chat-item-writer {
+    color: #000000;
+    text-align: center;
+    font: 18px var(--font-bm-dohyeon);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-chat-item-timestamp {
+    color: rgba(127,127,127,0.7);
+    text-align: center;
+    font: 14px var(--font-bm-dohyeon);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-chat-item-msg {
+    color: #000000;
+    text-align: left;
+    font: 16px;
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    word-break:break-all;
+}
+
+.stage-chat-tail {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0px 0px 10px 10px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0px 0px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.stage-chat-input {
+    background: transparent;
+    border:0px solid;
+    flex: 1;
+    height: 60px;
+    position: relative;
+    font-size: 20px;
+}
+
+.stage-chat-input:focus{
+    box-shadow: 0px 0px 4px rgba(0, 0, 255, 0.25);
+}
+
+.stage-chat-send-button {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.stagepeoplewrapper {
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    width: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-people-body {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    width: 470px;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.stage-people-item {
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-people-img {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.stage-people-nickname {
+    color: #000000;
+    text-align: center;
+    font: 400 20px var(--font-bm-dohyeon), sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-people-master-icon {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.stage-people-vaild-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.vector6 {
+    position: absolute;
+    left: 2.14px;
+    top: 2.14px;
+    overflow: visible;
+}
+
+.check {
+    position: absolute;
+    left: 12.86px;
+    top: 12.86px;
+    overflow: visible;
+}
+
+#queueHeader{
+    border-bottom: 1px solid black;
+}
+#queueBody{
+    display:flex;
+    flex-direction:row;
+    flex:1,1;
+}
+
+#queueLeftSide{
+    border-right: 1px solid black;
+    width:10rem;
+}
+
+.setting-button{
+    border:none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}

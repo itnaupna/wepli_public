@@ -1,0 +1,467 @@
+.Lbackground{
+    /* width: 118.75rem; */
+    width: 100%;
+    /* height: 60.5625rem; */
+    background: url(../PlayStageImage/background-Image.png), lightgray 50% / cover no-repeat;
+    height: 100vh; /* 뷰포트의 100% 높이 */
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: auto;
+    
+}
+.Side-Bar{
+    width: 4.375rem;
+    height: 60.5625rem;
+    flex-shrink: 0;
+    fill: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(182, 214, 255, 1);
+  }
+  /* 내 스테이지,팔로우 스테이지 탑 섹션 */
+.Lmain-Tsection{
+    width: 106.125rem;
+    height: 32.875rem;
+    border-radius: 1.875rem;
+    /* background: rgba(255, 255, 255, 0.40); */
+    /* background: rgba(255, 255, 255, 0.40); */
+    /* box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); */
+    position: absolute;
+    top:3.50rem;
+    margin: auto;
+    left:10.0rem;
+    display: flex;
+   
+}
+.Tsection-Lside{
+    width: 48.5625rem;
+    height: 32.875rem;
+    border-radius: 1.875rem;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    /* border: 1px solid blue; */
+    margin-right: 10.0rem;
+}
+.TL-MyStage{
+    width: 24.25rem;
+    height: 3.3125rem;
+    border-radius: 1.875rem;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3.3125rem;
+}
+.newStage-Button{
+     position: absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    border-radius: 1.875rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.40);
+    /* box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); */
+    width: 15vw;
+    height: 30vh;
+    left: 22.0vb;
+    cursor: pointer;
+}
+.newStage-Icon{
+    color: #4147d5;
+}
+.LiveOn-Icon{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #ccc;
+}
+.LiveOn-Icon:before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(65, 71, 213, 1);
+  color: #fff;
+  transition: 0.5s;
+  transform-origin: bottom;
+  transform: translatey(-100%) rotatex(90deg);
+}
+.LiveOn-Icon:hover:before
+{
+  transform: translatey(0) rotatex(0deg);
+}
+
+.LiveOn-Icon:after{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(65, 71, 213, 1);
+  color: #fff;
+  transition: 0.5s;
+  transform-origin: top;
+  transform: translatey(0) rotatex(0deg);
+}
+.LiveOn-Icon:hover:after
+{
+  transform: translatey(100%) rotatex(90deg);
+}
+.Tsection-Rside{
+    width: 58.125rem;
+    height: 32.875rem;
+    /* border-radius: 1.875rem;
+    background: rgba(255, 255, 255, 0.40); */
+    /* box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); */
+    margin: auto;
+    /* border:1px solid red; */
+}
+.Tsection-SelectBar{
+    width: 10.74925rem;
+    height: 3.125rem;
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 1.6rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    appearance: none;
+    background:url('../PlayStageImage/Icon/ArrowDown.svg') no-repeat right 0.1rem center ;
+    background-size: 1.0rem;
+    cursor: pointer;
+    outline: none;
+}   
+.Tsection-SearchBar{
+    width: 34.875rem;
+    height: 4.1875rem;
+    position:absolute;
+    border-radius: 1.875rem;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    fill: rgba(255, 255, 255, 0.40);
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    left: 69.5rem;
+}
+/* 돋보기 아이콘css */
+.Tsection-SearchBarIcon{
+    width: 2.25rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 5rem;
+    z-index: 99;
+}
+.Tsection-InputArea{
+    width: 18.96931rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    top:0;
+    bottom:0;
+    position: absolute;
+    margin: auto;
+    left:13.50rem;
+    vertical-align: middle;
+    resize:none;
+    border:none;
+}
+.InputPlace{
+    width: 15.96931rem;
+    height: 2.125rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    top:0;
+    bottom:0;
+    position: absolute;
+    margin: auto;
+    left:2.5rem;
+    vertical-align: middle;
+    resize:none;
+    border:none;
+    outline: none!important;
+
+}
+.InputPlace:foucus{
+    outline: none!important;
+}
+.Tsection-SearchBarIcon{
+    width: 1.89694rem;
+    height: 1.875rem;
+    position: absolute;
+    left: 0.1rem;
+    flex-shrink: 0;
+    color:rgba(25, 29, 33, 1);
+}
+.Tsection-InputArea:focus{
+    outline: none;
+}
+.Tsection-InputArea-Icon{
+    width: 0.93575rem;
+    height: 0.74763rem;
+    flex-shrink: 0;
+    fill: #D7E0FF;
+    stroke-width: 1.5px;
+    stroke: #4147D5;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin:auto;
+    left:22.46rem;
+}
+.Tsection-FollowStage{
+    width: 48.5625rem;
+    height: 26.875rem;
+    border-radius: 1.875rem;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    margin: auto;
+    top:5.5rem;
+    left: 55.5rem;
+}
+
+
+
+
+/* 스테이지 바텀섹션 */
+.Lmain-Bsection{
+    width: 106.125rem;
+    /* height: 18rem; */
+    border-radius: 1.875rem;
+    /* background: rgba(255, 255, 255, 0.40); */
+    /* box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); */
+    position: absolute;
+    top:66.5rem;
+    bottom: 5.0rem;
+    margin:auto;
+    left:10.0rem;
+    height: 100vh;
+    overflow: visible;
+    background-size: cover;
+
+}
+.Bsection-select{
+    width: 13.3125rem;
+    height: 2.3125rem;
+    border-radius: 1.875rem;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    fill: rgba(255, 255, 255, 0.40);
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    left:0.50rem;
+    
+}
+.Bsection-select:focus{
+    outline: none;
+}
+.BselectBar:focus{
+    outline: none;
+}
+.BselectBar{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 1.0rem;
+    margin:auto;
+    width: 13.3125rem;
+    height: 2.3125rem;
+    border-radius: 1.875rem;
+    background: transparent;
+    appearance:none;
+    border: none;
+}
+.Bselect-Icon{
+    width: 0.57825rem;
+    height: 0.52194rem;
+    position: absolute;
+    margin:auto;
+    top:0.5rem;
+    left:12.240rem;
+    cursor:pointer;
+}
+.Bsection-LiveList{
+    width: 106.125rem;
+    /* width: 100vh; */
+    /* border-radius: 1.875rem;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); */
+    /* position: absolute; */
+    top:1.5rem;
+    bottom: 0;
+    /* border:1px solid red; */
+    /* 무한스크롤 */
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    /* overflow-y: scroll; * 세로 스크롤 적용 */
+    overflow:hidden;
+	height: auto;
+    position: relative;
+    animation:fade-in 0.5s ease-in;
+    float: left;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.room-item{
+    width: 25.0rem;
+    height: 15.0rem;
+    border-radius: 1.875rem;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top:1.2rem;
+    float: left;
+    left: 1.50rem;
+    justify-content: flex-start;
+    animation: slide-up 0.5s ease-in;
+}
+@keyframes slide-up {
+    0% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+
+@-o-keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+
+@-o-keyframes rotate-loading {
+    0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+}
+
+@keyframes loading-text-opacity {
+    0%  {opacity: 0}
+    20% {opacity: 0}
+    50% {opacity: 1}
+    100%{opacity: 0}
+}
+
+@-moz-keyframes loading-text-opacity {
+    0%  {opacity: 0}
+    20% {opacity: 0}
+    50% {opacity: 1}
+    100%{opacity: 0}
+}
+
+@-webkit-keyframes loading-text-opacity {
+    0%  {opacity: 0}
+    20% {opacity: 0}
+    50% {opacity: 1}
+    100%{opacity: 0}
+}
+
+@-o-keyframes loading-text-opacity {
+    0%  {opacity: 0}
+    20% {opacity: 0}
+    50% {opacity: 1}
+    100%{opacity: 0}
+}
+.loading-container,
+.loading {
+    height: 100px;
+    position: relative;
+    width: 100px;
+    border-radius: 100%;
+    left: 46.0rem;
+}
+
+
+.loading-container { margin: 40px auto }
+
+.loading {
+    border: 2px solid transparent;
+    border-color: transparent #2186EB transparent #6340EE;
+    -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: rotate-loading 1.5s linear 0s infinite normal;
+    -o-transform-origin: 50% 50%;
+    -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+    -webkit-transform-origin: 50% 50%;
+    animation: rotate-loading 1.5s linear 0s infinite normal;
+    transform-origin: 50% 50%;
+}
+
+.loading-container:hover .loading {
+    border-color: transparent #E45635 transparent #E45635;
+}
+.loading-container:hover .loading,
+.loading-container .loading {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.Slide-setting{
+    position: absolute;
+    margin:auto;
+    top:0;
+    bottom: 0;
+}
+
+  

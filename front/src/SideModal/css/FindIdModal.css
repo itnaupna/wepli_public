@@ -1,0 +1,178 @@
+.findmodaltitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+}
+.findmodaltitlegroup {
+    position: absolute;
+    top: 0.19rem;
+    left: 5.44rem;
+    width: 7.63rem;
+    height: 3rem;
+}
+.findidmodalarrowgroup-icon {
+    position: absolute;
+    top: 0.63rem;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+}
+.findidmodalweplilogo-icon {
+    position: absolute;
+    top: 0;
+    left: 14.81rem;
+    width: 3.13rem;
+    height: 3.39rem;
+    object-fit: cover;
+}
+.findidmodalheader {
+    position: relative;
+    width: 17.94rem;
+    height: 3.39rem;
+    font-size: 2.5rem;
+    color: #000;
+}
+.findidinputemail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #f4f4f5;
+    width: 12.75rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+}
+.findidinputverfiy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #f4f4f5;
+    width: 17.8rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+}
+.findidinputemailgroup {
+    position: relative;
+    width: 12.75rem;
+    height: 4rem;
+}
+
+.findidemailbtnsendtext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #d0e0f4;
+    width: 4rem;
+    height: 1.88rem;
+    border: none;
+}
+.findidemailbtngroup {
+    position: relative;
+    width: 4rem;
+    height: 1.88rem;
+}
+.findidgofindpasstext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    display: inline-block;
+    width: 18.5rem;
+    text-align: center;
+}
+.findidgofindpasstextgroup {
+    flex: 1;
+    position: relative;
+    height: 0.94rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: #aeb2b8;
+}
+.findidmodalbottombtntext {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #d0e0f4;
+    border: none;
+    font-size: 18px;
+}
+.findidmodalbottombtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18.5rem;
+    height: 3.75rem;
+}
+.findidmodalbottomarrow-icon {
+    position: absolute;
+    top: 1.19rem;
+    left: 15.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.findidmodalbottombtngroup {
+    position: relative;
+    width: 18.5rem;
+    height: 3.75rem;
+    font-size: 1rem;
+}
+.findidmodalgroup {
+    position: fixed;
+    border-radius: 30px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.69rem 2.19rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.75rem;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 369px;
+
+}
+.findidmodalframe {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.63rem;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 0.4s ease-in-out;
+    z-index: 999;
+    border: 1px solid red;
+}
+
+.findidmodalarrowgroup-icon{
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'SUIT1';
+    font-weight: 200;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.ttf') format("truetype");
+    font-display: swap;
+}
+
+.mainsection1{
+    cursor: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #5ea6ff !important;
+    background-image: none !important;
+}
+
+.mainsectionimg1{
+    width: 25vw;
+}
+
+.mainsectionimg1group{
+    position: absolute;
+    display: inline-block;
+    left: 7%;
+    top: 23%;
+}
+
+.mainsection1textgroup {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    width: 19vw;
+    opacity: 0;
+    animation: fadeInText 2s ease forwards;
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
+.mainsection1text {
+    font-size: 200px;
+    color: transparent;
+    -webkit-text-stroke: 4px white;
+    text-stroke: 4px white;
+    font-family: 'SUIT1', serif;
+    position: relative;
+    transition: color 0.5s ease;
+    align-self: stretch;
+}
+
+.mainsection1text:hover{
+    color: white;
+}
+
+
+.cursorItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: .5;
+}
+
+.cursorItem .circle {
+    position: fixed;
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: -34px 0 0 -34px;
+    background: #ddd;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+.mainsectionimg2 {
+    width: 300px;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mainsectionimg2group {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.fadeIn {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+@keyframes moveDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(5%);
+    }
+}
+
+#mainsection1subtextgroup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 62vh;
+    align-self: stretch;
+}
+
+.mainsection1subtext1,
+.mainsection1subtext2 {
+    font-size: 80px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 2rem;
+    margin: 1rem;
+    opacity: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .mainsection1{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .mainsectionimg1 {
+        animation: fadeOut 1s ease forwards;
+    }
+    .mainsectionimg2 {
+        width: 200px;
+        top: 30%;
+    }
+    .mainsection1text {
+        font-size: 150px;
+    }
+    #mainsection1subtextgroup {
+        font-size: 20px;
+        top: 60vh;
+    }
+
+    .mainsectionimg2 {
+        width: 40vw;
+        top: 30%;
+    }
+
+    .mainsectionimg2group {
+        left: 50%;
+        transform: translateX(-30%) translateY(-50%);
+    }
+
+    .text {
+        font-size: 1.5rem;
+        margin: 1rem;
+        opacity: 0;
+        padding-left: 20px;
+        width: 65vw;
+        margin-left: 50px;
+    }
+
+    .mainsection2iphonemokup{
+        margin-left: 100px;
+    }
+
+}
+
+@media (max-width: 500px){
+    .mainsection1text{
+        margin-left: 50px;
+        font-size: 90px;
+    }
+
+    .mainsection1subtextgroup{
+        font-size: 40px;
+    }
+
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes imgFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

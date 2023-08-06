@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bit.mapper.MemberMapper">
+
+    <insert id="insertJoinMember" parameterType="MemberDto"> 
+        insert into tblMember (email, pw, nick, emailconfirm, phoneconfirm, socialtype) values (#{email},sha2(#{pw}, 256), #{nick}, #{emailconfirm}, 0, #{socialtype})
+    </insert>
+
+    <select id="selectCheckEmailExists" parameterType="string">
+        select count(*) from tblMember where email=#{email}
+    </select>
+
+    <select id="selectCheckNickExists" parameterType="string">
+        select count(*) from tblMember where nick=#{nick}
+    </select>
+
+    <select id="selectMemberDto" parameterType="string" resultType="MemberDto">
+        select * from tblMember where email=#{email}
+    </select>
+
+    <select id="selectCheckPasswordByEmail" parameterType="MemberDto" resultType="int">
+        select count(*) from tblMember where nick=#{nick} and pw=sha2(#{pw},256)
+    </select>
+
+    <select id="selectCheckPasswordByNick" parameterType="MemberDto" resultType="int">
+        select count(*) from tblMember where nick=#{nick} and pw=sha2(#{pw},256)
+    </select>
+
+    <select id="selectCheckEmailConfirm" parameterType="hashMap" resultType="int">
+        select IFNULL(emailconfirm , 0) as emailconfirm from tblMember where email = #{email} and nick = #{nick}
+    </select>
+
+    <select id="selectLogin" parameterType="Map" resultType="int">
+        select count(*) from tblMember where email=#{email} and pw=sha2(#{pw},256)
+    </select>
+
+    <select id="selectCheckPhoneConfirm" parameterType="hashMap" resultType="int">
+        select exists(select phoneconfirm from tblMember where nick = #{nick} and phone=#{phone})
+    </select>
+
+    <select id="selectFindPhoneConfirm" parameterType="string" resultType="int">
+        select phoneconfirm from tblMember where phone = #{phone}
+    </select>
+    
+    <select id="selectFindEmailConfirm" parameterType="string" resultType="int">
+        select emailconfirm from tblMember where email = #{email}
+    </select>
+
+    <update id="updateEmailConfirm" parameterType="string">
+        update tblMember set emailconfirm=1 where email=#{email}
+    </update>
+    <update id="updatePhoneConfirm" parameterType="string">
+        update tblMember set phoneconfirm=1 where phone=#{phone}
+    </update>
+    <update id="updatePhone" parameterType="hashMap">
+        update tblMember set phone = #{phone} where nick = #{nick}
+    </update>
+    <update id="updateNick" parameterType="Map">
+        update tblMember set nick=#{newNick} where nick=#{nick}
+    </update>
+    <update id="updatePw" parameterType="Map">
+        update tblMember set pw=sha2(#{pw},256) where nick=#{nick}
+    </update>
+    <update id="updateInfo" parameterType="Map">
+        update tblMember set email = #{email}, nick = #{newNick}, pw = sha2(#{pw},256)
+        where nick = #{nick}
+    </update>
+    <delete id="deleteMember" parameterType="MemberDto">
+        delete from tblMember where nick=#{nick} and pw=sha2(#{pw},256)
+    </delete>
+    <update id="updateDesc" parameterType="MemberDto">
+        update tblMember set `desc`=#{desc} where nick=#{nick}
+    </update>
+    <update id="updateImg" parameterType="MemberDto">
+        update tblMember set img=#{img} where nick=#{nick}
+    </update>
+
+    <select id="selectCheckPhoneExists" parameterType="string">
+        select count(*) from tblMember where phone=#{phone}
+    </select>
+
+    <select id="selectMypageDto" parameterType="string" resultType="MypageDto">
+        select * from vwMypage where nick=#{nick}
+    </select>
+
+    <select id="selectMypageDtoAndFollowCnt" parameterType="string" resultType="Map">
+        select *,
+        (select count(*) from tblFollow where follow = #{nick}) followCnt,
+        (select count(*) from tblFollow where target = #{nick}) followerCnt
+        from vwMypage where nick = #{nick}
+    </select>
+
+    <select id="selectMypageDtoByEmail" parameterType="string">
+        select * from vwMypage where email=#{email}
+    </select>
+
+    <select id="CheckMemberExists" parameterType="MemberDto" resultType="int">
+        select exists(select * from tblMember where email = #{email} and socialtype = #{socialtype})
+    </select>
+
+    <select id="FindCheckPhoneCode" parameterType="string">
+        select email from tblMember where phone=#{phone};
+    </select>
+
+    <update id="FindCheckPhonePw" parameterType="hashMap">
+        update tblMember set pw=sha2(#{newPw},256) where phone=#{phone}
+    </update>
+
+    <update id="FindCheckEmailPw" parameterType="hashMap">
+        update tblMember set pw=sha2(#{newPw},256) where email=#{email}
+    </update>
+
+    <select id="selectMemberImgByNick" parameterType="string" resultType="string">
+        select img from tblMember where nick=#{nick}
+    </select>
+
+    <select id="selectMemberAllImg" parameterType="String" resultType="String">
+        SELECT img FROM tblMember where nick = #{nick}
+        UNION
+        SELECT img FROM tblStage where nick = #{nick}
+        union
+        select img from tblPlaylist where nick = #{nick}
+        union
+        select img from tblSongs where playlistID IN (select idx from tblPlaylist where nick = #{nick});
+    </select>
+
+
+
+</mapper>

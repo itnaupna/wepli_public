@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bit.mapper.BlacklistMapper">
+
+    <select id="selectBlackTarget" parameterType="String" resultType="String">
+        select target from tblBlack where black = #{nick}
+    </select>
+    
+
+    <select id="selectBlacklist" parameterType="String" resultType="Map">
+        select target t,
+        (select img from tblMember where nick = t) img,
+        (select count(*) from tblFollow where target = t) cnt,
+        (select exists(select * from tblBlack where target = t and black = #{nick})) isblack
+        from tblBlack
+        where black = #{nick};
+    </select>
+    <insert id="insertBlacklist" parameterType="Map">
+        insert into tblBlack values (#{nick},#{target})
+    </insert>
+    <delete id="deleteBlacklist" parameterType="Map">
+        delete from tblBlack where black=#{nick} and target=#{target}
+    </delete>
+    <select id="selectBlackOpt" parameterType="string" resultType="Map">
+        select hidechat, mute from tblBlackOpt where nick=#{nick}
+    </select>
+    <insert id="insertBlackOpt" parameterType="String">
+        insert into tblBlackOpt values(#{nick}, 0, 0)
+    </insert>
+    <update id="updateBlackOpt" parameterType="Map">
+        update tblBlackOpt set hidechat=#{hidechat}, mute=#{mute} where nick=#{nick}
+    </update>
+    <select id="isBlackchk" parameterType="Map" resultType="int">
+        select exists(select * from tblBlack where black = #{nick} and target = #{target})
+    </select>
+
+</mapper>

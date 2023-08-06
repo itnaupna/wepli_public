@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'SUIT';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SUIT1';
+    font-weight: 200;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/sunn/SUIT-Heavy.ttf') format("truetype");
+    font-display: swap;
+}
+.aaaa{
+    font-family: 'SUIT', serif;
+}
+
+.bbbb{
+    font-family: 'SUIT1', serif;
+}
+

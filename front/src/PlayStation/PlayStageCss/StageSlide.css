@@ -1,0 +1,79 @@
+.StageSliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slideWrap {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.slideWrap a {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.NoLogin{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 35%;
+  }
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.navigation button:hover {
+  background-color: #0056b3;
+}
+
+.active {
+  background-color: #0056b3;
+}
+.alice-carousel__stage-item{
+}
+.alice-carousel__wrapper{
+  width:780px;
+  height: 395px;
+}
+.alice-carousel__stage{
+  top:40px;
+}
+.alice-carousel__prev-btn{
+  position: absolute;
+  top:160px;
+  bottom: 0;
+  margin:auto;
+  left: -300px;
+}
+
+.alice-carousel__next-btn{
+position: absolute;
+top:160px;
+bottom:0;
+margin: auto;
+left:570px;
+
+}
+
+.alice-carousel__stage-item{
+  margin:0 auto;
+  left:90px;
+}

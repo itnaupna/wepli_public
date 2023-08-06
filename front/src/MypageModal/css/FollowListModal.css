@@ -1,0 +1,315 @@
+.followmodalmodalarrow-icon {
+    position: relative;
+    width: 3.88rem;
+    height: 3.38rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.followmodalwepli {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+}
+
+.followmodaltitle {
+    position: relative;
+    width: 9.06rem;
+    height: 3.38rem;
+}
+
+.followmodalwplieonlylogo-5-icon {
+    position: relative;
+    width: 3.13rem;
+    height: 3.39rem;
+    object-fit: cover;
+}
+
+.followmodalheader {
+    width: 18.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.94rem;
+}
+
+.followmodalthumbnail-icon {
+    position: relative;
+    width: 3.75rem;
+    height: 3.75rem;
+    object-fit: cover;
+    border-radius: 30px;
+    background-color: #ddd;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.followmodalmembercounttext,
+.followmodalmembernicknametext {
+    align-self: stretch;
+    position: relative;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    height: 1.25rem;
+    flex-shrink: 0;
+}
+
+.followmodalmembernicknametext {
+    margin-left: 10px;
+
+}
+
+.followmodalmembercounttext {
+    font-size: 0.81rem;
+    font-family: var(--font-bm-hanna-air);
+    height: 0.94rem;
+    margin-left: 10px;
+    color: gray;
+}
+
+.followmodalinfogroup {
+    width: 9.38rem;
+    height: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.followmodalblackbtnrectangle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: blue;
+    box-shadow: 10px 10px 10px red;
+    opacity: 0.15;
+    mix-blend-mode: normal;
+}
+
+.followmodalblackbtntext {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px red;
+    mix-blend-mode: normal;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.followmodalblackbtnframe {
+    position: absolute;
+    top: calc(50% + 5px);
+    left: calc(50% - 25px);
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+    width: 3.13rem;
+    height: 1.25rem;
+    overflow: hidden;
+}
+
+.followmodalfollowbtnrectangle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px red;
+    opacity: 0.15;
+    mix-blend-mode: normal;
+}
+
+.followmodalfollowbtntext {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: rgba(166, 73, 218, 0.012);
+    box-shadow: 10px 10px 10px red;
+    mix-blend-mode: normal;
+    color: black;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.followmodalfollowbtnframe {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    border-radius: 20px;
+    background-color: rgba(166, 73, 218, 0.012);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+    width: 3.13rem;
+    height: 1.25rem;
+    overflow: hidden;
+}
+
+.followmodalveticalframe::-webkit-scrollbar {
+    display: none;
+}
+
+.followmodalbtnsection {
+    position: relative;
+    width: 3.13rem;
+    height: 3.13rem;
+}
+
+.followmodalbtngroup,
+.followmodallist {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.followmodallist {
+    margin-top: 20px;
+}
+
+.followmodallist {
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);*/
+    width: 18.13rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: row;
+    padding: 0.63rem 0.78rem;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 0.19rem;
+
+}
+
+.followmodalbtngroup {
+    width: 3.25rem;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.5rem;
+    color: #a649da;
+    font-family: var(--font-kbo-dia-gothic);
+}
+
+.followmodallayout,
+.followmodalveticalframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.followmodalveticalframe {
+    align-self: stretch;
+    height: 32.19rem;
+    overflow-y: auto;
+    flex-shrink: 0;
+    align-items: center;
+    text-align: left;
+    font-size: 1.06rem;
+    font-family: var(--font-bm-hanna_ttf);
+}
+
+.followmodallayout {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding: 2.5rem 2.25rem;
+    box-sizing: border-box;
+    align-items: flex-start;
+    gap: 1.88rem;
+}
+
+.followmodalgroup,
+.followmodallayout {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+}
+
+.followmodalwapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 23.25rem;
+    height: 41.75rem;
+    transform: translate(-50%, -50%);
+}
+
+.followmodalframe {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.63rem;
+    color: #fff;
+    font-family: Inter;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .followmodalframe {
+        height: 100%;
+        width: 100%;
+        margin-left: 70px;
+    }
+
+    .followmodalwapper {
+        margin-left: 30px;
+    }
+}

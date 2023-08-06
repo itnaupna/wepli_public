@@ -1,0 +1,53 @@
+.mainsection3 {
+    width: 100vw;
+    height: 110vh;
+    background-color: #5ea6ff;
+    cursor: none;
+}
+
+.mscontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+}
+
+.mscontainer .mstext {
+    font-size: 150px;
+}
+
+.mstext > p {
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(37, 37, 37) 50%);
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: -180px;
+    margin-left: 120px;
+    margin-right: 50px;
+    font-family: 'SUIT1', serif;
+}
+
+.text1{
+    font-size: 38px;
+}
+
+.text2,
+.text3{
+    margin-top: 200px;
+    font-size: 100px;
+}
+
+.msimg{
+    width: 20vw;
+}
+
+.msimggroup{
+    width: 20vw;
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+

@@ -1,0 +1,220 @@
+.blacklistoptionmodaltitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    display: inline-block;
+    width: 7.86rem;
+    font-size: 2.8rem;
+}
+.blacklistoptionmodaltitlegroup {
+    position: absolute;
+    top: 0.19rem;
+    left: 5.55rem;
+    width: 7.86rem;
+    height: 3rem;
+}
+.blacklistoptionmodalarrowgroup-icon {
+    position: absolute;
+    top: 0.63rem;
+    left: 0;
+    width: 2.06rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.blacklistoptionmodalweplilogo-icon {
+    position: absolute;
+    top: 0;
+    left: 15.28rem;
+    width: 3.22rem;
+    height: 3.39rem;
+    object-fit: cover;
+}
+.blacklistoptionmodalheader {
+    position: relative;
+    width: 18.5rem;
+    height: 3.39rem;
+    font-size: 2.5rem;
+    font-family: Inter;
+}
+.blacklistoptioncentertext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 18.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.blacklistoptioncentertextgroup {
+    position: relative;
+    width: 18.5rem;
+    height: 0;
+}
+.blacklistoptionchatcheckbox,
+.blacklistoptionchatchecksectio {
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #7d98ff;
+    box-sizing: border-box;
+}
+.blacklistoptionchatchecksectio {
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    width: 18.5rem;
+    height: 4rem;
+}
+.blacklistoptionchatcheckbox {
+    top: 1.26rem;
+    left: 15.81rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.blacklistoptionchatchecktext {
+    position: absolute;
+    top: 0.51rem;
+    left: 1rem;
+    line-height: 3.13rem;
+    display: inline-block;
+    width: 13.94rem;
+    height: 2.25rem;
+    font-size: 1.2rem;
+}
+.blacklistoptionchatcheckgroup {
+    position: relative;
+    width: 18.5rem;
+    height: 4rem;
+    text-align: left;
+}
+.blacklistoptionmutecheckbox {
+    position: absolute;
+    top: 1.26rem;
+    left: 15.81rem;
+    background-color: #fff;
+    border: 2px solid #7d98ff;
+    box-sizing: border-box;
+    width: 1.5rem;
+    height: 1.56rem;
+}
+.blacklistoptionmutecheckttext {
+    position: absolute;
+    top: 0.45rem;
+    left: 1rem;
+    line-height: 3.13rem;
+    display: inline-block;
+    width: 13.94rem;
+    height: 2.25rem;
+    font-size: 1.2rem;
+}
+
+.blacklistoptionmodalmodalbtnte {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #d0e0f4;
+    border: none;
+    cursor: pointer;
+}
+.blacklistoptionmodalmodalbtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18.5rem;
+    height: 3.75rem;
+}
+.blacklistoptionmodalmodalarrow-icon {
+    position: absolute;
+    top: 1.19rem;
+    left: 15.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.blacklistoptionmodalbtngroup {
+    position: relative;
+    width: 18.5rem;
+    height: 3.75rem;
+    font-size: 1rem;
+    color: #fff;
+    font-family: Inter;
+}
+.blacklistoptionmodalgroup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 22.88rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.69rem 2.19rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.75rem;
+    transform: translate(-50%, -50%);
+}
+.blacklistoptionmodalframe {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.63rem;
+    color: #fff;
+    font-family: Inter;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.showchatcheckboxtext,
+.showsoundcheckboxtext{
+    font-size: 15px;
+}
+.optionchatsection{
+    display: inline-block;
+}
+.optionsoundsection{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.blacklistoptionsubtext{
+    text-align: center;
+    margin-top: 10px;
+    bottom: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .blacklistoptionmodalframe{
+        height: 100%;
+        width: 100%;
+        margin-left: 70px;
+    }
+
+    .blacklistoptionmodalgroup{
+        margin-left: 30px;
+    }
+}

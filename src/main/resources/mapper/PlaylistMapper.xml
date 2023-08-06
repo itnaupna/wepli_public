@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bit.mapper.PlaylistMapper">
+
+    <select id="selectPliComments" parameterType="hashMap" resultType="PliCommentDto">
+        select p.*, m.img
+        from tblPlaylistComment p
+        join tblMember m ON p.writer = m.nick
+        where p.playlistID = #{playlistID}
+        order by p.writeday desc
+    </select>
+
+    <select id= "selectPliCommentToIdx" parameterType="int" resultType="PliCommentDto">
+        select * from tblPlaylistComment where idx = #{idx}
+    </select>
+
+    <insert id="insertPliComment" parameterType="PliCommentDto">
+          insert into tblPlaylistComment
+          (writer,content,playlistID)
+          values
+          (#{writer},#{content},#{playlistID})
+    </insert>
+
+
+    <update id="updatePliComment" parameterType="PliCommentDto">
+          update tblPlaylistComment
+          set content=#{content} 
+          where idx=#{idx}
+    </update>
+
+
+    <delete id="deletePliComment" parameterType="int">
+          delete from tblPlaylistComment where idx=#{idx}
+    </delete>
+
+
+    <select id="selectPlaylist" parameterType="int" resultType="PlaylistDto">
+          select * from vwPlaylist where idx=#{idx}
+    </select>
+
+    <select id="selectLike" parameterType="Map" resultType="int">
+        select exists(select * from tblPlaylistLike where user=#{nick} and playlistID=#{playlistID})
+    </select>
+
+    <select id="selectMyPli" parameterType="String" resultType="PlaylistDto">
+        select * from vwPlaylist where nick = #{nick} order by makeday desc
+    </select>
+
+    <select id="selectMyPliImg" parameterType="String" resultType="String">
+        select img from tblPlaylist where nick = #{nick}
+    </select>
+
+    <select id="selectMyPliToIdx" parameterType="int" resultType="PlaylistDto">
+        select * from vwPlaylist where idx = #{idx}
+    </select>
+ 
+    <select id="selectUserFromPublicPli" parameterType="String" resultType="PlaylistDto">
+        select * from vwPlaylist where nick = #{nick} and isPublic = 1
+        order by makeday desc
+    </select>
+
+    <delete id="deleteLike" parameterType="Map">
+        delete from tblPlaylistLike where user=#{nick} and playlistID=#{playlistID}
+    </delete>
+
+    <insert id="insertLike" parameterType="Map">
+        insert into tblPlaylistLike
+        values (#{nick},#{playlistID})
+    </insert>
+
+    <select id="selectPublicPlaylist" resultType="PlaylistDto">
+        <choose>
+            <when test="param2.orderByDay">
+                SELECT * FROM vwPlaylist where isPublic=1         
+                <if test="param1.list != null">
+                    and (
+                    <foreach collection="param1.list" item="item" separator=" OR ">
+                        ${type} LIKE CONCAT('%', #{item}, '%')
+                    </foreach> 
+                    )
+                </if>
+                <if test="param1.black != null">
+                    and nick not in (
+                    <foreach collection="param1.black" item="item" separator=", ">
+                        #{item}
+                    </foreach>
+                    )
+                </if>
+                 ORDER BY makeday DESC
+            </when>
+            <otherwise>
+                SELECT * FROM vwPlaylist where isPublic=1 
+                <if test="param1.list != null">
+                and (
+                <foreach collection="param1.list" item="item" separator=" OR ">
+                    ${type} LIKE CONCAT('%', #{item}, '%')
+                </foreach> 
+                )
+                </if>
+                <if test="param1.black != null">
+                    and nick not in (
+                    <foreach collection="param1.black" item="item" separator=", ">
+                        #{item}
+                    </foreach>
+                    )
+                </if>
+                ORDER BY likesCount DESC
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="selectLikeTopPli" resultType="PlaylistDto">
+        select * from vwPlaylist where isPublic = 1
+        order by likesCount desc limit 0, 50
+    </select>
+
+    <select id="selectLikePli" parameterType="string" resultType="PlaylistDto">
+        SELECT * FROM vwPlaylist WHERE idx IN (SELECT playlistID FROM tblPlaylistLike WHERE `user`=#{nick}) order by likesCount desc
+    </select>
+
+    <select id="selectFollowPli" parameterType="String" resultType="PlaylistDto">
+        select * from vwPlaylist
+        where nick in (select target from tblFollow where follow = #{nick})
+        order by likesCount desc
+    </select>
+
+
+    <insert id="insertPlaylist" parameterType="PlaylistDto">
+          insert into tblPlaylist (title, `desc`, genre, tag, img, isPublic, nick)
+          values (#{title},#{desc},#{genre},#{tag},#{img},#{isPublic},#{nick})
+    </insert>
+
+
+    <update id="updatePlaylist" parameterType="PlaylistDto">
+          update tblPlaylist set title=#{title}, `desc`=#{desc}, img=#{img}, genre=#{genre}, tag=#{tag}, isPublic=#{isPublic}
+          where idx=#{idx}
+    </update>
+
+    <delete id="deletePlaylist" parameterType="int">
+          delete from tblPlaylist where idx=#{idx}
+    </delete>
+
+    <select id="detailPlayList" parameterType="int" resultType="PlaylistDto">
+        select * from vwPlaylist where idx = #{idx}
+    </select>
+
+    <select id="selectFirstPlaylist" parameterType="string">
+          SELECT * FROM vwPlaylist WHERE ispublic=1 and nick=#{nick} ORDER BY likescount DESC LIMIT 1;
+    </select>
+
+    <insert id="insertSong" parameterType="SongDto">
+        insert into tblSongs 
+            (playlistID, title, img, songlength, genre, tag, singer, songaddress, songorigin, songorder) 
+        select
+            #{playlistID}, #{title}, #{img}, #{songlength}, #{genre}, #{tag}, #{singer}, #{songaddress}, #{songorigin}, IFNULL(MAX(songorder), 0) + 1
+        from tblSongs where playlistID = #{playlistID};
+    </insert>
+
+    <select id="selectMySongAllImg" parameterType="String" resultType="String">
+        select img from tblSongs where playlistID IN (select idx from tblPlaylist where nick = #{nick})
+    </select>
+
+    <select id="selectSong" parameterType="int" resultType="SongDto">
+          select * from tblSongs where idx=#{idx}
+    </select>
+
+    <select id="selectSongsAll" parameterType="int" resultType="SongDto">
+        select * from tblSongs where playlistID=#{playlistID} order by songorder 
+    </select>
+
+    <update id="updateSong" parameterType="SongDto">
+        update tblSongs
+        set playlistID=#{playlistID}, title=#{title}, img = #{img}, genre=#{genre}, tag=#{tag}, singer=#{singer} 
+        where idx=#{idx}
+    </update>
+
+    <delete id="deleteSong" parameterType="int">
+          delete from tblSongs where idx=#{idx}
+    </delete>
+
+    <update id="updateSongOrder" parameterType="hashMap">
+        update tblSongs set songorder = #{newOrder} where songorder = #{oldOrder} and playlistID = #{playlistID}
+    </update>
+
+</mapper>

@@ -1,0 +1,167 @@
+.mypageinfochangemodaltitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 7.86rem;
+    font-size: 2.5rem;
+}
+.mypageinfochangemodaltitlegrou {
+    position: absolute;
+    top: 0.19rem;
+    left: 5.61rem;
+    width: 7.86rem;
+    height: 3rem;
+}
+.mypageinfochangemodalarrowgrou-icon {
+    position: absolute;
+    top: 0.63rem;
+    left: 0;
+    width: 2.06rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.mypageinfochangemodalweplilogo-icon {
+    position: absolute;
+    top: 0;
+    left: 15.28rem;
+    width: 3.22rem;
+    height: 3.39rem;
+    object-fit: cover;
+}
+.mypageoutmemebermodalheader {
+    position: relative;
+    width: 18.5rem;
+    height: 3.39rem;
+}
+.mypageinfochangemodalcentertex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 18.5rem;
+    text-align: center;
+}
+.mypageinfochangermodaltextgrou {
+    position: relative;
+    width: 18.5rem;
+    height: 0;
+    font-size: 1.13rem;
+    font-family: "SF Pro Text";
+}
+.mypageinfochangemodalnicknamei {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #f4f4f5;
+    width: 18.5rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+}
+.mypageinfochangemodalpassnickn {
+    position: relative;
+    width: 18.5rem;
+    height: 4rem;
+}
+.mypageinfochangemodalbtnrectan {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #d0e0f4;
+}
+.mypageinfochangemodalbtntext {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #d0e0f4;
+    border: none;
+    cursor: pointer;
+}
+.mypageinfochangemodalmypagebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18.5rem;
+    height: 3.75rem;
+}
+.mypageinfochangemodalbtnarrow-icon {
+    position: absolute;
+    top: 1.19rem;
+    left: 15.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.mypageinfochangemodalbtngroup {
+    position: relative;
+    width: 18.5rem;
+    height: 3.75rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.mypageinfochangemodalgroup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 22.88rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.69rem 2.19rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.75rem;
+    transform: translate(-50%, -50%);
+}
+.mypageinfochangemodalframe {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.63rem;
+    color: #fff;
+    font-family: Inter;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .mypageinfochangemodalframe{
+        height: 100%;
+        width: 100%;
+        margin-left: 70px;
+    }
+
+    .mypageinfochangemodalgroup{
+        margin-left: 30px;
+    }
+}

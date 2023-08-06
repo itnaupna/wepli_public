@@ -1,0 +1,150 @@
+.weplilogo-icon {
+    position: relative;
+    border-radius: 10px;
+    width: 64px;
+    height: 77.81px;
+    object-fit: cover;
+}
+
+.vector-icon {
+    position: absolute;
+    margin: 0 !important;
+    height: 50%;
+    width: 52%;
+    top: 26%;
+    right: 24%;
+    bottom: 24%;
+    left: 24%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 0;
+}
+
+.sidemenuhomebutton {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sidemenuplaylistbutton {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.sidemenubtns,
+.sidemenustagebutton {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.sidemenustagebutton {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 11px;
+    justify-content: flex-start;
+}
+
+.sidemenubtns {
+    height: 282px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.sidemenuuserimg-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.sidemenumypagebutton {
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display:flex;
+    justify-content: center;
+
+}
+
+.sidemenulogoutbutton {
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 50px;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.sidemenulogoutbutton:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+.sidemnubtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidemnubtn:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+.sidemenu {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    /*box-shadow: 3px 1px 9px rgba(0, 0, 0, 0.25);*/
+    top: 0;
+    bottom: 0;
+    /* height:100vh; */
+    display: flex;
+    flex-direction: column;
+    padding: 30px 3px;
+    z-index: 999;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}

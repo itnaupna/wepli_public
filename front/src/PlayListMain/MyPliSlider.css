@@ -1,0 +1,66 @@
+.slick-slide{
+    width: 740px !important;
+    height: 700px !important;
+    border-radius: 0 !important;
+    background: rgba(255, 255, 255, 0) !important;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) !important;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.slick-list{
+    height: 700px!important;
+    top: 0 !important;
+    margin: 0 !important;
+}
+.slick-track{
+    height: 700px !important;
+}
+.MyPliSliderBody{
+    width: 1600px !important;
+    height: 600px !important;
+}
+.slick-arrow{
+    top: 300px !important;
+}
+.slick-prev{
+    width: 315px !important;
+    height: 600px !important;
+}
+.slick-next{
+    width: 460px !important;
+    height: 600px !important;
+}
+.slick-center{
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+.slick-prev{
+    z-index: 999;
+    opacity: 1!important;
+    right: 1600px !important;
+}
+
+.slick-prev:before{
+    content: url("../MainIMG/Arrow_prev.png") !important;
+    position: relative !important;
+    right: 190px !important;
+}
+
+.slick-next{
+    font-size: 50px !important;
+    z-index: 999;
+    opacity: 1!important;
+}
+
+.slick-next:before{
+    content: url("../MainIMG/Arrow_next.png") !important;
+    position: relative !important;
+    left: 315px !important;
+}
+.NoLogin{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 35%;
+}

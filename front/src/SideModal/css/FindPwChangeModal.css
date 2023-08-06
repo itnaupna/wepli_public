@@ -1,0 +1,158 @@
+.findpwchangemodaltitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 7.86rem;
+}
+.findpwchangemodaltitlegroup {
+    position: absolute;
+    top: 0.19rem;
+    left: 5.55rem;
+    width: 7.86rem;
+    height: 3rem;
+}
+.findpwchangemodalarrowgroup-icon {
+    position: absolute;
+    top: 0.63rem;
+    left: 0;
+    width: 2.06rem;
+    height: 2rem;
+}
+.findpwchangemodalweplilogo-icon {
+    position: absolute;
+    top: 0;
+    left: 15.28rem;
+    width: 3.22rem;
+    height: 3.39rem;
+    object-fit: cover;
+}
+.findpwchangemodalheader {
+    position: relative;
+    width: 18.5rem;
+    height: 3.39rem;
+    font-size: 2.5rem;
+}
+.findpwchangemodalcentertext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 18.5rem;
+}
+.findpwchangemodaltextgroup {
+    position: relative;
+    width: 18.5rem;
+    height: 0;
+    font-family: "SF Pro Text";
+}
+.findpwchangemodalphoneinput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #f4f4f5;
+    width: 18.5rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+}
+.findpwchangemodalphoneinputgro {
+    position: relative;
+    width: 18.5rem;
+    height: 4rem;
+}
+.div {
+    position: relative;
+    font-family: "SF Pro Text";
+    display: inline-block;
+    width: 18.5rem;
+    flex-shrink: 0;
+}
+
+.findpwchangemodalbtntext {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #d0e0f4;
+    border: none;
+    cursor: pointer;
+}
+.findpwchangemypagebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18.5rem;
+    height: 3.75rem;
+}
+.findpwchangemodalbtnarrow-icon {
+    position: absolute;
+    top: 1.19rem;
+    left: 15.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+}
+.findpwchangemodalbtngroup {
+    position: relative;
+    width: 18.5rem;
+    height: 3.75rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.findpwchangemodalgroup {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: #fff;
+    width: 22.88rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.69rem 2.19rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.75rem;
+}
+.findpwchangemodalframe {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.63rem;
+    color: #fff;
+    font-family: Inter;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 0.4s ease-in-out;
+    z-index: 999;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.findpwchangemodaltextgroup{
+    /*border: 1px solid red;*/
+    height: 2vh;
+    display: inline-block;
+    text-align: center;
+}

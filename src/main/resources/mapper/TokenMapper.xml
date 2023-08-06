@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bit.mapper.TokenMapper">
+
+    <select id="getToken" parameterType="String" resultType="TokenDto">
+        select * from tblToken where nick = #{nick}
+    </select>
+
+    <update id="updateToken" parameterType="TokenDto">
+        update tblToken set refreshToken = #{refreshToken}, accessToken = #{accessToken} where nick = #{nick}
+    </update>
+
+    <insert id="insertToken" parameterType="String">
+        insert into tblToken (nick) values(#{nick})
+    </insert>
+
+    <select id="accessToRefresh" parameterType="String" resultType="String">
+        select refreshToken from tblToken where accessToken = #{accessToken}
+    </select>
+
+    <update id="updateAccessToken" parameterType="Map">
+        update tblToken set accessToken = #{accessToken} where refreshToken = #{refreshToken}
+    </update>
+</mapper>

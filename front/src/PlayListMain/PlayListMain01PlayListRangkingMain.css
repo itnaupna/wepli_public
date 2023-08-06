@@ -1,0 +1,609 @@
+.playlistmain01{
+    /* fonts */
+    /* --font-black-han-sans: "Black Han Sans";
+    --font-bm-hanna_ttf: "BM HANNA_TTF";
+    --font-bm-hanna-air: "BM HANNA Air";
+    --font-kbo-dia-gothic: "KBO Dia Gothic"; */
+
+    /* font sizes */
+    --font-size-21xl: 2.5rem;
+    --font-size-4xs: 0.56rem;
+    --font-size-smi: 0.81rem;
+    --font-size-mid: 1.06rem;
+    --font-size-lg: 1.13rem;
+
+    /* Colors */
+    --color-white: #fff;
+    --color-gray-100: rgba(0, 0, 0, 0.5);
+    --color-gray-200: rgba(255, 255, 255, 0.4);
+    --color-black: #000;
+    --color-darkorchid-100: #a649da;
+    --color-darkorchid-200: rgba(166, 73, 218, 0.15);
+
+    /* Gaps */
+    --gap-mini: 0.94rem;
+    --gap-5xs: 0.5rem;
+    --gap-3xs: 0.63rem;
+    --gap-8xs: 0.31rem;
+
+    /* Paddings */
+    --padding-8xs: 0.31rem;
+    --padding-21xl: 2.5rem;
+    --padding-31xl: 3.13rem;
+    --padding-3xs: 0.63rem;
+    --padding-smi-5: 0.78rem;
+    --padding-4xs: 0.56rem;
+
+    /* border radiuses */
+    --br-xl: 20px;
+
+}
+.playlistrankinglistitemswrappe::-webkit-scrollbar{
+    display: none;
+}
+
+.playlistrankinglogotitle-icon {
+    position: relative;
+    width: 31.25rem;
+    height: 11.56rem;
+    object-fit: cover;
+}
+.playlistbuttonicon {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+}
+.playlistbuttontext {
+    position: relative;
+    font-weight: 500;
+}
+.playlistbutton,
+.playlistbuttonset1 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.playlistbutton {
+    border-radius: var(--br-xl);
+    background-color: var(--color-darkorchid-200);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding: var(--padding-4xs) var(--padding-8xs);
+    box-sizing: border-box;
+    align-items: center;
+    gap: var(--gap-8xs);
+    min-width: 10rem;
+    max-width: 15rem;
+    min-height: 3.13rem;
+    color: #6340EE !important;
+}
+.playlistbutton:hover{
+    color: #a649da !important;
+}
+.playlistbutton:active{
+    transform: translate(3px, 3px);
+    box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.75);
+    color: #a649da !important;
+}
+.playlistbutton:focus{
+    color: #6340EE !important;
+}
+.playlistbuttonset1 {
+    align-items: flex-start;
+    gap: var(--gap-3xs);
+    min-width: 20.63rem;
+    justify-content: flex-start !important;
+}
+.playlistbuttonlist,
+.playlistrankingheader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.playlistbuttonlist {
+    flex: 1;
+    padding: var(--padding-3xs) 0.94rem;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    gap: var(--gap-3xs);
+    min-width: 31.25rem;
+    max-width: 62.5rem;
+}
+.playlistrankingheader {
+    align-self: stretch;
+    padding: 0 0 0 4.38rem;
+    justify-content: space-between;
+}
+.playlistrankinglistitemnumber {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.88rem;
+    height: 1.88rem;
+    flex-shrink: 0;
+}
+.playlistrankinglistitemthumbna-icon {
+    position: relative;
+    width: 3.75rem;
+    height: 3.75rem;
+    object-fit: cover;
+}
+.playlistrankinglistitemowner,
+.playlistrankinglistitemtitle {
+    align-self: stretch;
+    position: relative;
+    text-transform: capitalize;
+    align-items: center;
+    height: 1.25rem;
+    flex-shrink: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.playlistrankinglistitemowner {
+    font-size: var(--font-size-smi);
+    font-family: var(--font-bm-hanna-air);
+    height: 0.94rem;
+}
+.playlistrankinglistiteminfo1 {
+    width: 9.38rem;
+    height: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--gap-5xs);
+    text-align: left;
+    font-size: var(--font-size-mid);
+    font-family: var(--font-bm-hanna_ttf);
+}
+.playlistrankinglistitemmakeday {
+    position: relative;
+    text-transform: capitalize;
+    color: var(--color-gray-100);
+    display: flex;
+    align-items: center;
+    width: 5.8rem;
+    height: 0.65rem;
+    flex-shrink: 0;
+}
+.playlistrankinglistitemlikenum {
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    top: 0;
+    left: 25%;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.playlistrankinglistitemlikeico-icon {
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    top: 25%;
+    right: 75%;
+    bottom: 25%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.playlistrankinglistitemlikegro {
+    position: relative;
+    width: 2.5rem;
+    height: 1.44rem;
+    font-size: var(--font-size-smi);
+}
+.playlistrankinglistitemcategor {
+    position: relative;
+    align-items: center;
+    width: 2.75rem;
+    flex-shrink: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.playlistrankinglistitemtags {
+    width: 6.13rem;
+    height: 0.65rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--gap-3xs);
+    text-align: left;
+    font-family: var(--font-bm-hanna_ttf);
+}
+.playlistrankinglistiteminfo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+    text-align: right;
+    font-size: var(--font-size-4xs);
+    font-family: var(--font-bm-hanna-air);
+}
+.playlistrankinglistitem,
+.playlistrankinglistitemswrappe {
+    border-radius: var(--br-xl);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-start;
+}
+.playlistrankinglistitem {
+    background-color: var(--color-white);
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: row;
+    padding: var(--padding-3xs) var(--padding-smi-5);
+    align-items: center;
+    gap: var(--gap-mini);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.playlistrankinglistitem:hover{
+    cursor: pointer;
+}
+.playlistrankinglistitemswrappe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-gray-200);
+    overflow-y: auto;
+    flex-direction: column;
+    padding: var(--padding-21xl) var(--padding-31xl);
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+.playlistrankinglistwrapper {
+    position: absolute;
+    height: 92.31%;
+    width: 101.6%;
+    top: 7.69%;
+    right: -0.8%;
+    bottom: 0;
+    left: -0.8%;
+}
+.playlistrankinglisttitle {
+    position: absolute;
+    width: 98.43%;
+    top: 0;
+    left: 0.79%;
+    font-size: var(--font-size-21xl);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.2);
+}
+.playlistrankinglistwapper {
+    position: relative;
+    width: 31.25rem;
+    height: 40.63rem;
+}
+.rankinglistitemtogglecaption {
+    position: absolute;
+    height: 100%;
+    width: 42.67%;
+    top: 0;
+    left: 0;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+.rankinglistitemtogglebox-icon {
+    position: absolute;
+    height: 100%;
+    width: 53.33%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 46.67%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.playlistrankinglisttoggle {
+    position: absolute;
+    height: 3.33%;
+    width: 14.53%;
+    top: 1.67%;
+    right: 3.69%;
+    bottom: 95%;
+    left: 81.78%;
+    text-align: left;
+    font-size: 0.75rem;
+    font-family: var(--font-kbo-dia-gothic);
+}
+.playlistmain01followprofillimg-icon {
+    position: relative;
+    border-radius: 30px;
+    width: 3.75rem;
+    height: 3.75rem;
+    object-fit: cover;
+}
+.playlistrankinglistiteminfo12 {
+    width: 9.38rem;
+    height: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    font-size: var(--font-size-mid);
+    font-family: var(--font-bm-hanna_ttf);
+}
+.follownum,
+.playlistrankinglistitemmakeday2 {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+.playlistrankinglistitemmakeday2 {
+    position: relative;
+    width: 5.8rem;
+    height: 0.65rem;
+    flex-shrink: 0;
+}
+.follownum {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.follow,
+.followrankinglsitfollowicons {
+    position: absolute;
+    height: 100%;
+    width: 56.82%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 43.18%;
+}
+.followrankinglsitfollowicons {
+    width: 34.09%;
+    right: 65.91%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.playlistmain01follow {
+    position: absolute;
+    height: 100%;
+    width: 48.89%;
+    top: 0;
+    right: 51.11%;
+    bottom: 0;
+    left: 0;
+}
+.followrankinglsitmusicicon,
+.playlistmain01playlistcount {
+    position: absolute;
+    height: 100%;
+    width: 58.14%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 41.86%;
+}
+.followrankinglsitmusicicon {
+    width: 34.88%;
+    right: 65.12%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.playlistmain01followcount {
+    position: absolute;
+    height: 100%;
+    width: 47.78%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 52.22%;
+}
+.playlistmain01followitems {
+    position: relative;
+    width: 5.63rem;
+    height: 0.94rem;
+    text-align: left;
+    color: var(--color-black);
+    font-size: 13px;
+}
+.playlistrankinglistiteminfo22 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 2.19rem;
+    text-align: right;
+    font-size: var(--font-size-4xs);
+    color: var(--color-gray-100);
+    font-family: var(--font-bm-hanna-air);
+}
+.playlistrankinglistwrapper2 {
+    position: absolute;
+    height: 92.31%;
+    width: 100.57%;
+    top: 7.69%;
+    right: -0.29%;
+    bottom: 0;
+    left: -0.29%;
+}
+.playlistrankingbody {
+    align-self: stretch;
+    height: 40.94rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 5rem var(--padding-8xs);
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-width: 32.5rem;
+    min-height: 40.63rem;
+    font-size: var(--font-size-lg);
+    color: var(--color-black);
+    font-family: var(--font-black-han-sans);
+}
+.playlistmain01 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 41.25rem;
+    text-align: center;
+    font-size: var(--font-size-mid);
+    color: var(--color-darkorchid-100);
+    font-family: var(--font-kbo-dia-gothic);
+}
+.playlistrankinglogotitle-icon:hover{
+    cursor: pointer;
+}
+.MyLikePliNoLoging{
+    font-size: 26px !important;
+    text-align: center;
+    width: 100%;
+    margin-top: 220px;
+    font: var(--font-black-han-sans);
+}
+.playlistrankingHidden{
+    display: none;
+}
+
+/* 토글 버튼 css */
+
+.rankingbutton-cover,
+.rankingknobs,
+.rankinglayer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.rankingtoggle {
+    position: relative;
+    top: 55%;
+    width: 52px;
+    height: 25px;
+    margin: -23px auto -23px auto;
+    overflow: hidden;
+    left: 40%;
+    border: 1px solid #D7D7D7;
+}
+
+.rankingCheckbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.rankingknobs {
+    z-index: 2;
+}
+
+.rankinglayer {
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.rankingtoggle.rankingtoggle-r,
+.rankingtoggle.rankingtoggle-r .rankinglayer {
+    border-radius: 100px;
+}
+
+#rankingtoggle-3 .rankingknobs:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 0px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #B5D5FE;
+    border-radius: 50%;
+    transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#rankingtogglen-3 .rankingCheckbox:active + .rankingknobs:before {
+    width: 46px;
+    border-radius: 100px;
+}
+
+#rankingtoggle-3 .rankingCheckbox:checked:active + .rankingknobs:before {
+    margin-left: -26px;
+}
+
+#rankingtoggle-3 .rankingCheckbox:checked + .rankingknobs:before {
+    content: "";
+    left: 32px;
+    background-color: #EBF7FC;
+}
+
+#rankingtoggle-3 .rankingCheckbox:checked ~ .rankinglayer {
+    background-color: #B5D5FE;
+}
+
+.rankingtoggleBody{
+    position: relative;
+    display: block;
+    height: auto;
+    width: 140px;
+    left: 28%;
+    top: -555px;
+    margin: -30px auto 0 auto;
+}
+.rankingtoggleText{
+    font-family: var(--font-bm-dohyeon);
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .playlistrankingbody{
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: inherit;
+        height:auto;
+        margin:auto;
+    }
+}
+
+@media (max-width:1659px){
+    .playlistrankingbody{
+        justify-content: space-around;
+    }
+}

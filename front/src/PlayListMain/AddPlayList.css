@@ -1,0 +1,747 @@
+.playlistaddframe {
+    /* fonts
+    --font-bm-hanna_ttf: "BM HANNA_TTF";
+    --font-bm-hanna-air: "BM HANNA Air";
+    --font-bm-dohyeon: "BM DoHyeon";
+    --font-black-han-sans: "Black Han Sans";
+    --font-kbo-dia-gothic: "KBO Dia Gothic"; */
+    --font-abeezee: ABeeZee;
+
+    /* font sizes */
+    --font-size-xs: 0.75rem;
+    --font-size-mini: 0.94rem;
+    --font-size-sm: 0.88rem;
+    --font-size-xl: 1.25rem;
+
+    /* Colors */
+    --color-gray-100: rgba(0, 0, 0, 0.3);
+    --color-gray-200: rgba(0, 0, 0, 0.5);
+    --color-gray-300: rgba(255, 255, 255, 0.4);
+    --color-black: #000;
+    --color-white: #fff;
+
+    /* Gaps */
+    --gap-3xs: 0.63rem;
+
+    /* Paddings */
+    --padding-xl: 1.25rem;
+    --padding-8xs: 0.31rem;
+
+    /* border radiuses */
+    --br-11xl: 30px;
+    --br-xl: 20px;
+    --br-3xs: 10px;
+    --br-8xs: 5px;
+}
+@media (max-width: 1250px) {
+    .playlistaddframe {
+        padding-left: 170px !important;
+    }
+}
+.playlistaddcover-icon {
+    position: relative;
+    border-radius: var(--br-xl);
+    width: 18.75rem;
+    height: 18.75rem;
+    object-fit: cover;
+}
+.playlistaddcover-plus {
+    position: absolute;
+    border-radius: var(--br-xl);
+    width: 18.75rem;
+    height: 18.75rem;
+    object-fit: cover;
+    z-index: 15;
+    opacity: 0;
+}
+.playlistaddcover-plus:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.playlistaddchangimginput{
+    position: absolute;
+    border-radius: var(--br-xl);
+    width: 18.75rem;
+    height: 18.75rem;
+    object-fit: cover;
+    padding: 0;
+    opacity: 0;
+}
+.playlistaddchangimginputbody{
+    height: 300px;
+}
+
+.playlistaddinplaylisttitle {
+    align-self: stretch;
+    position: relative;
+    font-size: 4.38rem;
+    text-transform: capitalize;
+    font-family: var(--font-bm-hanna_ttf);
+    background-color: rgba(0,0,0,0);
+    border: none;
+    outline: none;
+}
+.playlistaddprofileimage-icon {
+    position: absolute;
+    height: 98.04%;
+    width: 7.3%;
+    top: 0;
+    right: 92.7%;
+    bottom: 1.96%;
+    left: 0;
+    border-radius: 50px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.playlistaddinplaylistnickna {
+    position: absolute;
+    top: 1.96%;
+    left: 9.49%;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: -webkit-inline-box;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 40;
+    -webkit-box-orient: vertical;
+    width: 38.75rem;
+}
+.playlistaddinplaylistuserin {
+    position: relative;
+    width: 42.81rem;
+    height: 3.19rem;
+    font-size: 2.19rem;
+}
+.p {
+    margin: 0;
+}
+.playlistaddinplaylistinfo {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: -webkit-inline-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 64;
+    -webkit-box-orient: vertical;
+    width: 42.81rem;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    resize: none;
+    outline: none;
+    height: 60px;
+    font-size: 20px;
+    font-family: var(--font-kbo-dia-gothic);
+}
+.playlistaddlikebutton-icon,
+.playlistaddplaybutton-icon {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+.playlistaddplaybutton-icon:hover{
+    cursor: pointer;
+}
+.playlistaddlikebutton-icon {
+    width: 1.69rem;
+    height: 1.69rem;
+}
+
+.playlistaddlikebutton-icon:hover{
+    cursor: pointer;
+}
+.playlistaddinsertmusicbutto-icon {
+    position: relative;
+    width: 2.19rem;
+    height: 2.19rem;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.playlistaddinsertmusicbutto-icon:hover{
+    cursor: pointer;
+}
+.playlistaddlistupdatebutton-icon {
+    position: relative;
+    width: 1.88rem;
+    height: 1.88rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.playlistaddlistupdatebutton-icon:hover{
+    cursor: pointer;
+}
+
+.playlistaddbuttonbody {
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gray-300);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 45.38rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-8xs) 0.94rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.playlistaddbuttonbody:hover{
+    background-color: #bcbcff;
+}
+.playlistaddbuttonbody:active{
+    transform: translate(3px, 3px);
+    box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.75);
+}
+.playlistmessegecount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 2.19rem;
+}
+.playlistmessegeicon {
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    width: 2.19rem;
+    height: 2.19rem;
+    overflow: hidden;
+}
+.playlistaddviewcomment {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7.19rem;
+    height: 2.19rem;
+}
+.playlistaddviewmusic,
+.playlistmain03musicicon {
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    width: 2.19rem;
+    height: 2.19rem;
+}
+.playlistaddviewmusic {
+    right: 7.19rem;
+    width: 7.19rem;
+}
+.playlistaddviewicon {
+    position: absolute;
+    top: 0.31rem;
+    right: 0;
+    width: 14.38rem;
+    height: 2.19rem;
+}
+.playlistaddviewlikecount,
+.playlistaddviewlikeicon {
+    position: relative;
+    width: 1.88rem;
+    height: 1.88rem;
+}
+.playlistaddviewlikecount {
+    text-transform: capitalize;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.69rem;
+    flex-shrink: 0;
+}
+.playlistaddviewlike {
+    position: absolute;
+    top: 0;
+    right: 14.69rem;
+    width: 6.75rem;
+    height: 2.81rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.19rem;
+}
+.playlistaddviewicons {
+    position: relative;
+    width: 21.44rem;
+    height: 2.81rem;
+}
+.playlistaddinplaylistinfobu,
+.playlistaddinplaylistinfos {
+    display: flex;
+    padding: 0 var(--padding-8xs);
+    justify-content: center;
+}
+.playlistaddinplaylistinfobu {
+    align-self: stretch;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    text-align: center;
+}
+.playlistaddinplaylistinfos {
+    width: 46.25rem;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+    gap: 0.94rem;
+}
+.playlistaddtop {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-3xs);
+    max-width: 66.25rem;
+    z-index: 0;
+    font-family: var(--font-kbo-dia-gothic);
+}
+.playlistaddlistdelete-icon {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.playlistaddlistdelete-icon:hover{
+    cursor: pointer;
+}
+.grpbtnset,
+.txtlength {
+    display: flex;
+    align-items: center;
+}
+.grpbtnset {
+    position: absolute;
+    top: 1.56rem;
+    left: 55.31rem;
+    width: 4.69rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.txtlength {
+    top: calc(50% - 14px);
+    left: 48.06rem;
+    justify-content: center;
+    width: 7.06rem;
+    height: 1.75rem;
+}
+.txtlength,
+.txttitle {
+    position: absolute;
+    text-transform: capitalize;
+}
+
+.txttitle {
+    top: calc(50% - 12px);
+    left: 11.56rem;
+    font-size: 1.5rem;
+    font-family: var(--font-abeezee);
+    display: inline-block;
+    width: 19.69rem;
+}
+.imgthumbnail-icon {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 4.5rem;
+    width: 3.13rem;
+    height: 3.13rem;
+    object-fit: cover;
+}
+.txtrank {
+    /* position: absolute;
+    top: calc(50% - 10px);
+    left: 1.06rem;
+    font-size: var(--font-size-sm);
+    text-transform: capitalize;
+    font-family: var(--font-black-han-sans);
+    display: inline-block;
+    width: 2.19rem;
+    height: 1.25rem; */
+}
+.playlistadditems {
+    flex: 1;
+    position: relative;
+    border-bottom: 1px solid var(--color-black);
+    box-sizing: border-box;
+    height: 5rem;
+    min-width: 46.88rem;
+}
+.playlistaddlist {
+    align-self: stretch;
+    border-radius: var(--br-11xl);
+    background-color: var(--color-gray-300);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2.19rem 2.5rem;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 46.88rem;
+    max-width: 66.25rem;
+    min-height: 35.63rem;
+    max-height: 43.75rem;
+    z-index: 1;
+    text-align: center;
+}
+.tagtitle {
+    position: absolute;
+    top: 0;
+    left: 1.02rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    width: 58.36rem;
+    height: 1.25rem;
+    justify-content: flex-start;
+}
+.tagtitleiconbody {
+    position: absolute;
+    top: 0.13rem;
+    left: 0;
+    width: 0.95rem;
+    height: 0.94rem;
+    overflow: hidden;
+}
+.playlistaddtagheader {
+    align-self: stretch;
+    position: relative;
+    height: 1.25rem;
+}
+.txtplaylistaddform {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 10.38rem;
+    height: 2.06rem;
+    resize: none;
+    background-color: rgba(0, 0, 0 ,0);
+    border: none;
+    outline:none;
+
+}
+.playlistaddcreaatecommentpr-icon {
+    position: absolute;
+    margin: 0 !important;
+    top: 0.44rem;
+    left: 4.5rem;
+    border-radius: var(--br-xl);
+    width: 1.31rem;
+    height: 1.31rem;
+    object-fit: cover;
+    z-index: 0;
+}
+.playlistaddcreatecommentpro {
+    top: 0.63rem;
+    left: 6.38rem;
+    display: inline-block;
+    width: 6.25rem;
+    height: 0.94rem;
+    z-index: 1;
+}
+.playlistaddcreatecommentcre,
+.playlistaddcreatecommentcre1,
+.playlistaddcreatecommentpro {
+    position: absolute;
+    margin: 0 !important;
+    text-transform: capitalize;
+    flex-shrink: 0;
+}
+.playlistaddcreatecommentcre {
+    top: 0.69rem;
+    left: 0.94rem;
+    font-size: var(--font-size-xs);
+    font-family: var(--font-bm-hanna_ttf);
+    color: var(--color-gray-200);
+    text-align: center;
+    display: inline-block;
+    width: 3.13rem;
+    height: 0.94rem;
+    z-index: 2;
+}
+.playlistaddcreatecommentcre1 {
+    top: 0.5rem;
+    right: 1.19rem;
+    font-size: 0.81rem;
+    font-family: var(--font-bm-hanna-air);
+    display: flex;
+    align-items: center;
+    width: 1.63rem;
+    height: 1.25rem;
+    z-index: 3;
+    padding-left:5px;
+    padding-right: 3px;
+    border: 1px solid var(--color-gray-100);;
+    text-align: center;
+    top: 6px;
+    border-radius: 0.375rem;
+
+}
+.playlistaddcreatecommentcre1:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+.playlistaddformheader {
+    position: absolute;
+    width: calc(100% - 2px);
+    top: 0;
+    right: 0.13rem;
+    left: 0;
+    border-radius: var(--br-8xs) var(--br-8xs) 0 0;
+    background-color: var(--color-white);
+    border-bottom: 0.3px solid var(--color-gray-100);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-3xs);
+    font-size: var(--font-size-sm);
+    font-family: var(--font-bm-dohyeon);
+    height: 35px;
+}
+.playlistaddtagform {
+    top:28px;
+    align-self: stretch;
+    position: relative;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-gray-300);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    height: 2.06rem;
+    min-width: 10.38rem;
+    max-width: 10.38rem;
+    font-size: var(--font-size-mini);
+}
+.playlistaddtaggroup1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.31rem;
+    min-width: 46.88rem;
+    max-width: 59.38rem;
+}
+.playlistaddtagtextbody-icon {
+    top: 0;
+    left: 0;
+    border-radius: var(--br-8xs);
+    width: 59.38rem;
+    height: 3.75rem;
+}
+.playlistaddtagtext {
+    position: absolute;
+    top: calc(50% + 0.49px);
+    left: calc(50% - 455.13px);
+    text-transform: capitalize;
+    display: inline-block;
+    width: 56.88rem;
+    height: 1.23rem;
+}
+.playlistaddtagprofilebo {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-radius: var(--br-8xs) var(--br-8xs) 0 0;
+    background-color: #ffffff;
+    border: 0.5px solid gray;
+    box-sizing: border-box;
+    height: 1.29rem;
+}
+.playlistaddtagcreateday1 {
+    position: absolute;
+    top: -0.03rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    width: 8.13rem;
+    height: 0.56rem;
+    color: black;
+    left: -10%;
+}
+.playlistaddtagcreateday {
+    position: absolute;
+    top: 0.19rem;
+    right: 1.31rem;
+    width: 4.88rem;
+    height: 0.56rem;
+}
+.playlistaddtagdeletefra-icon {
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+    width: 0.73rem;
+    height: 0.59rem;
+}
+.playlistaddtagdeletefra-icon:hover{
+    cursor: pointer;
+}
+.playlistaddtagprofileim-icon {
+    position: relative;
+    border-radius: var(--br-xl);
+    width: 0.94rem;
+    height: 0.94rem;
+    object-fit: cover;
+}
+.playlistaddtagprofileim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.05rem;
+    height: 0.94rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.playlistaddtagnickname {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.13rem;
+    flex-shrink: 0;
+}
+.playlistaddtagnicknameb {
+    position: absolute;
+    width: calc(100% - 754.31px);
+    top: 0.09rem;
+    right: 45.85rem;
+    left: 1.29rem;
+    border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: var(--font-size-xs);
+    color: var(--color-black);
+    font-family: var(--font-bm-hanna_ttf);
+}
+.playlistaddtaginfobody {
+    position: absolute;
+    top: 0.18rem;
+    right: 0.63rem;
+    width: 57.94rem;
+    height: 0.94rem;
+}
+.playlistaddtaginfo {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1.29rem;
+    text-align: right;
+    font-size: 0.56rem;
+    color: var(--color-gray-200);
+}
+.playlistaddtagitems {
+    flex: 1;
+    position: relative;
+    height: 3.75rem;
+}
+.playlistaddtagswrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 46.88rem;
+    max-width: 59.38rem;
+    max-height: 43.75rem;
+    font-size: var(--font-size-mini);
+}
+.playlistaddtagframe {
+    align-self: stretch;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gray-300);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-xl) 3.44rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.75rem;
+    min-width: 46.88rem;
+    max-width: 66.25rem;
+    z-index: 2;
+    font-size: 1.13rem;
+    height: 185px;
+}
+.playlistaddclose-icon {
+    position: absolute;
+    margin: 0 !important;
+    top: 1.56rem;
+    right: 1.56rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 3;
+}
+.playlistaddclose-icon:hover{
+    cursor: pointer;
+}
+.playlistadd,
+.playlistaddframe {
+    position: relative;
+    overflow-y: auto;
+    display: flex;
+    box-sizing: border-box;
+    min-width: 46.88rem;
+}
+.playlistadd {
+    flex: 1;
+    border-radius: var(--br-11xl);
+    background-color: var(--color-gray-300);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    /*height: 60.56rem;*/
+    flex-direction: column;
+    padding: var(--padding-xl);
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    max-height: 60.56rem;
+    overflow: hidden;
+}
+.playlistaddframe {
+    width: 100%;
+    height: 63.06rem;
+    flex-direction: row;
+    padding: var(--padding-xl) 0;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 63.06rem;
+    max-height: 67.5rem;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--font-bm-hanna-air);
+}

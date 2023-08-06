@@ -1,0 +1,64 @@
+.mainsection5 {
+    width: 100vw;
+    height: 120vh;
+    overflow: hidden;
+    cursor: none;
+    background-color: #5ea6ff;
+}
+
+.mainsectioncard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url("../photo/headphone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text1-1,
+.text2-1,
+.text3-1,
+.text4-1 {
+    font-size: 58px;
+    color: white;
+    opacity: 0;
+    font-weight: bold;
+}
+
+.overlap-text {
+    z-index: 1;
+}
+
+.testimg{
+    width: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+    .text1-1,
+    .text2-1,
+    .text3-1,
+    .text4-1 {
+        font-size: 38px; /* Adjust the font size for smaller screens */
+    }
+
+    .testimg {
+        width: 40vw; /* Adjust the image width for smaller screens */
+    }
+
+}
+
+/* Media query for even smaller screens, e.g., smartphones */
+@media screen and (max-width: 480px) {
+    .text1-1,
+    .text2-1,
+    .text3-1,
+    .text4-1 {
+        font-size: 28px; /* Further adjust the font size for smaller screens */
+    }
+
+    .testimg {
+        width: 60vw; /* Further adjust the image width for smaller screens */
+    }
+}
